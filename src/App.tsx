@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { questions, Question } from './questions'
+import { useState, useEffect } from 'react'
+import { questions } from './questions'
 
 interface Progress {
   currentQuestionIndex: number
