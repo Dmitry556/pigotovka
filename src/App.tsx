@@ -366,44 +366,44 @@ function App() {
 
           {/* Explanation */}
           {showExplanation && (
-            <div className="mt-8 space-y-6">
+            <div className="mt-6 space-y-4">
               {/* Correct Answer Explanation */}
-              <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border-2 border-green-200 shadow-lg">
-                <div className="flex items-start space-x-3 mb-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">✓</span>
+              <div className="p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start space-x-2 mb-3">
+                  <div className="flex-shrink-0 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <span className="text-white font-bold text-xs">✓</span>
                   </div>
-                  <h3 className="text-xl font-bold text-green-800 leading-tight">
+                  <h3 className="text-base font-bold text-green-800 leading-tight">
                     Чому правильно:
                   </h3>
                 </div>
-                <p className="text-lg text-green-900 leading-relaxed font-medium pl-11">
+                <div className="text-lg leading-relaxed text-green-900 font-medium bg-white p-4 rounded-md border border-green-200">
                   {currentQuestion.explanation.whyCorrect}
-                </p>
+                </div>
               </div>
 
               {/* Wrong Answers Explanation */}
-              <div className="p-6 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border-2 border-orange-200 shadow-lg">
-                <div className="flex items-start space-x-3 mb-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">!</span>
+              <div className="p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg border-l-4 border-orange-500">
+                <div className="flex items-start space-x-2 mb-3">
+                  <div className="flex-shrink-0 w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center mt-0.5">
+                    <span className="text-white font-bold text-xs">!</span>
                   </div>
-                  <h3 className="text-xl font-bold text-orange-800 leading-tight">
+                  <h3 className="text-base font-bold text-orange-800 leading-tight">
                     Чому інші варіанти не підходять:
                   </h3>
                 </div>
-                <p className="text-lg text-orange-900 leading-relaxed font-medium pl-11">
+                <div className="text-lg leading-relaxed text-orange-900 font-medium bg-white p-4 rounded-md border border-orange-200">
                   {currentQuestion.explanation.whyNotOther}
-                </p>
+                </div>
               </div>
 
               {/* Learning Tip */}
-              <div className="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-400">
+              <div className="p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-400">
                 <div className="flex items-center space-x-2 mb-2">
-                  <span className="text-blue-600 font-bold">💡</span>
-                  <span className="text-blue-800 font-semibold">Порада для запам'ятовування:</span>
+                  <span className="text-blue-600 text-sm">💡</span>
+                  <span className="text-blue-800 font-medium text-sm">Порада:</span>
                 </div>
-                <p className="text-blue-800 font-medium">
+                <p className="text-blue-800 text-sm leading-relaxed">
                   Перечитайте пояснення ще раз перед переходом до наступного питання
                 </p>
               </div>
