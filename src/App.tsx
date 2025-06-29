@@ -366,9 +366,9 @@ function App() {
 
           {/* Explanation */}
           {showExplanation && (
-            <div className="mt-6 space-y-4">
+            <div className="mt-8 space-y-6">
               {/* Correct Answer Explanation */}
-              <div className="p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border-l-4 border-green-500">
+              <div className="p-5 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border-l-4 border-green-500 shadow-sm">
                 <div className="flex items-start space-x-2 mb-3">
                   <div className="flex-shrink-0 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
                     <span className="text-white font-bold text-xs">✓</span>
@@ -377,13 +377,13 @@ function App() {
                     Чому правильно:
                   </h3>
                 </div>
-                <div className="text-lg leading-relaxed text-green-900 font-medium bg-white p-4 rounded-md border border-green-200">
+                <div className="text-lg leading-loose text-green-900 font-medium bg-white p-6 rounded-md border border-green-200 min-h-[80px]">
                   {currentQuestion.explanation.whyCorrect}
                 </div>
               </div>
 
               {/* Wrong Answers Explanation */}
-              <div className="p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg border-l-4 border-orange-500">
+              <div className="p-5 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border-l-4 border-orange-500 shadow-sm">
                 <div className="flex items-start space-x-2 mb-3">
                   <div className="flex-shrink-0 w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center mt-0.5">
                     <span className="text-white font-bold text-xs">!</span>
@@ -392,7 +392,7 @@ function App() {
                     Чому інші варіанти не підходять:
                   </h3>
                 </div>
-                <div className="text-lg leading-relaxed text-orange-900 font-medium bg-white p-4 rounded-md border border-orange-200">
+                <div className="text-lg leading-loose text-orange-900 font-medium bg-white p-6 rounded-md border border-orange-200 min-h-[80px]">
                   {currentQuestion.explanation.whyNotOther}
                 </div>
               </div>
