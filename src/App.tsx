@@ -326,9 +326,9 @@ function App() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto p-4 py-8">
+      <div className="max-w-4xl mx-auto px-2 sm:px-4 py-8">
         {/* Question Card */}
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 mb-6">
           <h2 className="text-question font-semibold text-gray-800 leading-tight mb-6">
             {currentQuestion.question}
           </h2>
